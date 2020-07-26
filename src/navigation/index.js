@@ -23,26 +23,6 @@ export default StackScreen = () => {
       <Stack.Navigator
         initialRouteName={SCREEN_NAME.HOME}
         headerMode="none"
-      // screenOptions={screenProps => ({
-      //   headerTitleAlign: 'center',
-      //   headerTintColor: 'red',
-      //   headerTitleStyle: {
-      //     fontSize: 10,
-      //   },
-      //   headerRight: props => {
-      //     if (!screenProps.navigation.canGoBack()) {
-      //       return '';
-      //     }
-      //     return (
-      //       <HeaderBackButton
-      //         {...props}
-      //         onPress={() => {
-      //           screenProps.navigation.goBack();
-      //         }}
-      //       />
-      //     );
-      //   },
-      // })}
       >
         <Stack.Screen name={SCREEN_NAME.HOME} component={Home} />
         <Stack.Screen name={SCREEN_NAME.ALL} component={All} />

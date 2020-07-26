@@ -77,13 +77,6 @@ export default class All extends React.Component {
     return rating;
   }
 
-  _handleDetail = (item) => {
-    console.log(this.props);
-    this.props.navigation.navigate('Detail', { storeData: item });
-    console.log(item);
-    console.log('=======item');
-  }
-
   renderItem = ({ item, index }) => {
     const { navigation } = this.props;
     return (
